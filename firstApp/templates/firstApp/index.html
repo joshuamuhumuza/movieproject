@@ -3,5 +3,18 @@
         <h1>
             i love the way you handle my situations
         </h1>
+        <p>These are the movies available</p>
+        {% for movie in movies %}
+        <div>
+            <p>title: {{ movie.title }}</p>
+            <p>Description: {{ movie.text }}</p>
+            <p>created Date: {{ movie.created_date}}</p>
+            <p>Published Date: {{ movie.published_date}}</p>
+            <p>Image: <img src="{{ movie.model_pic}}"/></p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+       
     </body>
 </html>

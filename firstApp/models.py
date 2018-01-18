@@ -1,14 +1,10 @@
 from django.db import models
 
-
-class Question(models.Model):
-    question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
-
-
-class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    choice_text = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
-    
-# Create your models here.
+    # Create your models here.
+class movie(models.Model):
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField()
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+    model_pic = models.ImageField(upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')        

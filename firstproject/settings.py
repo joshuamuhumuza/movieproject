@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'firstproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'mydb',
+        'NAME': 'movieprojectdb',
     }
 }
 
