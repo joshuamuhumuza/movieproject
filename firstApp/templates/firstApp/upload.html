@@ -1,0 +1,116 @@
+{% extends "index.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}
+        <div class="page-title"> 
+            <h3 class="title">Upload book</h3> 
+        </div>
+        <div class="row upload-menus">
+            <!-- Basic example -->
+            <div class="col-md-4">
+                <h4 class="text-center">Upload from Desktop</h4>
+                <div class="panel panel-default">
+                   
+                    <div class="panel-body text-center">
+                            <i class="fa fa-cloud-upload" style="font-size:50px;"></i>
+                    </div><!-- panel-body -->
+                </div> <!-- panel -->
+            </div> <!-- col-->
+            
+            <!-- Horizontal form -->
+            <div class="col-md-4">
+                <h4 class="text-center">from Dropbox</h4>
+                <div class="panel panel-default">
+                        
+                    <div class="panel-body text-center">
+                            <i class="fa fa-dropbox upload-span" style="font-size:50px; color:cornflowerblue"></i>
+                    </div> <!-- panel-body -->
+                </div> <!-- panel -->
+            </div> <!-- col -->
+
+            <div class="col-md-4">
+                    <h4 class="text-center">from Google drive</h4>
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                                <i class="fa fa-google" style="font-size:50px;"></i>
+                        </div> <!-- panel-body -->
+                    </div> <!-- panel -->
+                </div> <!-- col -->
+    
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="col-md-6"><span>Recent Uploads</span></div>
+                        <div class="col-md-6 text-right"> <span>50 uploads made</span> </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                            <div class="panel-body panel-padding" >
+                                
+                                    <div class="col-md-8">
+                                        <p>The story of Dungu and nambi</p>
+                                        <p class="check-status">Done <i class="ion-checkmark checkmark-postion" ></i></p>
+                                    </div>
+                                    <div class="col-md-4 text-right"> <button class="btn btn-success btn-sm m-b-5">Edit Details</button> </div>
+                                
+                            </div> <!-- panel-body -->
+                    </div> <!-- panel -->
+                    
+                    <div class="panel panel-default">
+                            <div class="panel-body panel-padding" >
+                                <div class="row">
+                                    <div class="col-md-8">
+                                            <p>The story of Dungu and nambi</p>
+                                    </div>
+                                    <div class="col-md-4 text-right"> <span>From Google Drive</span> </div>
+                                </div>    
+
+                                <div class="progress progress-custom" >
+                                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            </div>
+                                </div>
+                                <div class="row" >
+                                    <div class="col-md-12" ><span>Uploading (80%)</span></div>
+                                </div>
+                            </div> <!-- panel-body -->
+                    </div>
+                    <div class="panel panel-default">
+                            <div class="panel-body panel-padding" >
+                                <div class="row">
+                                    <div class="col-md-8">
+                                            <p>The story of Dungu and nambi</p>
+                                    </div>
+                                    <div class="col-md-4 text-right"> <span>From Google Drive</span> </div>
+                                </div>    
+
+                                <div class="progress progress-custom" >
+                                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            </div>
+                                </div>
+                                <div class="row" >
+                                    <div class="col-md-12" ><span>Uploading (80%)</span></div>
+                                </div>
+                            </div> <!-- panel-body -->
+                    </div>
+
+                    <div class="panel panel-default">
+                            <div class="panel-body panel-padding" >
+                                <div class="row">
+                                    <div class="col-md-8">
+                                            <p>Elon Musk</p>
+                                    </div>
+                                    <div class="col-md-4 text-right"> <span>From Google Drive</span> </div>
+                                </div>    
+
+                                <div class="progress progress-custom" >
+                                    <div class="progress-bar progress-bar-pink progress-bar-striped " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            </div>
+                                </div>
+                                
+                            </div> <!-- panel-body -->
+                    </div>
+
+            </div>
+        </div>
+{% endblock %}

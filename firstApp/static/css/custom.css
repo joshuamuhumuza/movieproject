@@ -1,0 +1,25 @@
+.progress-custom{
+    margin-top:2px;
+    border-radius:10%;
+    height:5px;
+}
+
+.check-status{
+    color:#5cb85c;
+}
+
+.checkmark-postion{
+    padding-left:10px;
+}
+
+.upload-menus{
+    padding-left:56px;
+     padding-right:80px;
+}
+.panel-body.panel-padding{
+    padding-top:0px;
+}
+
+.panel-body.upload-span{
+    font-size:50px;
+}

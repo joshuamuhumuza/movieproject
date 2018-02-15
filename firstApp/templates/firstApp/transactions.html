@@ -1,0 +1,98 @@
+{% extends "index.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}
+                <div class="row">
+                    <div class="col-lg-8 col-md-offset-2">
+                        <div class="portlet"><!-- /primary heading -->
+                            <div class="portlet-heading">
+                                <h3 class="portlet-title text-dark text-uppercase">
+                                    Books Statistics
+                                </h3>
+                                <div class="portlet-widgets">
+                                    <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                    <span class="divider"></span>
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#portlet5"><i class="ion-minus-round"></i></a>
+                                    <span class="divider"></span>
+                                    <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div id="portlet5" class="panel-collapse collapse in">
+                                <div class="portlet-body">
+                                    <div id="combine-chart">
+                                        <div id="combine-chart-container" class="flot-chart" style="height: 180px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /Portlet -->
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+
+                <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <table id="datatable" class="table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Title</th>
+                                                        <th>Buyer</th>
+                                                        <th>Type</th>
+                                                        <th>Transaction ID</th>
+                                                        <th>ISBN-NO</th>
+                                                        <th>Time</th>
+                                                        <th>Purchase Date</th>
+                                                        <th>Price</th>
+                                                    </tr>
+                                                </thead>
+    
+                                         
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Tiger Nixon</td>
+                                                        <td>System Architect</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>61</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                    </tr>
+                                      
+                                                </tbody>
+                                            </table>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> <!-- End Row -->
+    
+{% endblock %}
+

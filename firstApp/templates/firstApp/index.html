@@ -1,20 +1,174 @@
-<html>
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from coderthemes.com/velonic_3.0/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jan 2018 06:30:22 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="img/favicon_1.ico">
+
+        <title>Velonic - Responsive Admin Dashboard Template</title>
+
+        <!-- Google-Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600,700,900,400italic' rel='stylesheet'>
+
+        <!-- Bootstrap core CSS -->
+        <link href=" {% static 'css/bootstrap.min.css' %} " rel="stylesheet">
+        <link href=" {% static 'css/bootstrap-reset.css' %} " rel="stylesheet">
+
+        <!--Animation css-->
+        <link href=" {% static 'css/animate.css' %} " rel="stylesheet">
+
+        <!--Icon-fonts css-->
+        <link href=" {% static 'assets/font-awesome/css/font-awesome.css' %} " rel="stylesheet" />
+        <link href= "{% static 'assets/ionicon/css/ionicons.min.css' %} " rel="stylesheet" />
+
+        <!--Morris Chart CSS -->
+        <link rel="stylesheet" href= "{% static 'assets/morris/morris.css' %} ">
+
+        <!-- sweet alerts -->
+        <link href="{% static 'assets/sweet-alert/sweet-alert.min.css' %} " rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href=" {% static 'css/style.css' %} " rel="stylesheet">
+        <link href=" {% static 'css/helper.css' %}" rel="stylesheet">
+        <link href=" {% static 'css/style-responsive.css' %}" rel="stylesheet" />
+
+    </head>
+
+
     <body>
-        <h1>
-            i love the way you handle my situations
-        </h1>
-        <p>These are the movies available</p>
-        {% for movie in movies %}
-        <div>
-            <p>title: {{ movie.title }}</p>
-            <p>Description: {{ movie.text }}</p>
-            <p>created Date: {{ movie.created_date}}</p>
-            <p>Published Date: {{ movie.published_date}}</p>
-            <p>Image: <img src="{{ movie.model_pic}}"/></p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-       
+
+        <!-- Aside Start-->
+        <aside class="left-panel">
+
+            <!-- brand -->
+            <div class="logo">
+                <a href="index.html" class="logo-expanded">
+                   
+                    <span class="nav-label">Hozybook</span>
+                </a>
+            </div>
+            <!-- / brand -->
+        
+            <!-- Navbar Start -->
+            <nav class="navigation">
+                <ul class="list-unstyled">
+                    <li class="has-submenu active"><a href="#"><i class="ion-home"></i> <span class="nav-label">Dashboard</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="ion-cloud"></i> <span class="nav-label">Uploads</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="ion-settings"></i> <span class="nav-label">Books</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="ion-compose"></i> <span class="nav-label">Sales</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="ion-compose"></i> <span class="nav-label">Transactions</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="ion-compose"></i> <span class="nav-label">Site Admins</span></a>
+                        
+                    </li>
+                    
+                </ul>
+            </nav>
+                
+        </aside>
+        <!-- Aside Ends-->
+
+
+        <!--Main Content Start -->
+        <section class="content">
+            
+            <!-- Header -->
+            <header class="top-head container-fluid">
+                <button type="button" class="navbar-toggle pull-left">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             
+                <!-- Right navbar -->
+                <ul class="list-inline navbar-right top-menu top-right-menu">  
+                    <!-- user login dropdown start-->
+                    <li class="dropdown text-center">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="" class="img-circle profile-img thumb-sm">
+                            <span class="username">Admin</span> <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu extended pro-menu fadeInUp animated" tabindex="5003" style="overflow: hidden; outline: none;">
+                            <li><a href="profile.html"><i class="fa fa-briefcase"></i>Profile</a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->       
+                </ul>
+                <!-- End right navbar -->
+
+            </header>
+            <!-- Header Ends -->
+
+
+            <!-- Page Content Start -->
+            <!-- ================== -->
+
+            <div class="wraper container-fluid">
+                <div class="page-title"> 
+                    <h3 class="title">Welcome !</h3> 
+                </div>
+            </div>
+            <!-- Page Content Ends -->
+            <!-- ================== -->
+
+            <!-- Footer Start -->
+            <footer class="footer">
+                2018 © Hozybookweb. All rights reserved
+            </footer>
+            <!-- Footer Ends -->
+        </section>
+        <!-- Main Content Ends -->
+        
+
+
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script src=" {% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/modernizr.min.js' %} "></script>
+        <script src="{% static 'js/pace.min.js' %}"></script>
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <script src="{% static 'js/jquery.scrollTo.min.js' %} "></script>
+        <script src="{% static 'js/jquery.nicescroll.js' %} " type="text/javascript"></script>
+        <script src="{% static 'assets/chat/moment-2.2.1.js' %} "></script>
+
+        <!-- Counter-up -->
+        <script src="{% static 'js/waypoints.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'js/jquery.counterup.min.js' %} " type="text/javascript"></script>
+
+        
+        
+        <script src="{% static 'js/jquery.app.js' %}"></script>
+        <!-- Chat -->
+        <script src="{% static 'js/jquery.chat.js' %} "></script>
+        <!-- Dashboard -->
+        <script src="{% static 'js/jquery.dashboard.js' %} "></script>
+
+        <!-- Todo -->
+        <script src="{% static 'js/jquery.todo.js' %} "></script>
+        
+
+
     </body>
+
 </html>
+

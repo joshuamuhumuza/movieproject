@@ -1,0 +1,86 @@
+{% extends "index.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}
+<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                        <div class="row ">
+                                <div class="col-md-6">
+                                        <h1 class="panel-title">Site Admins</h1>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                        <button type="button" class="btn btn-success btn-rounded m-b-5">Add Users</button>
+                                        
+                                </div>
+                            </div>
+                </div>
+                <div class="panel-body">
+                    
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>USERNAME</th>
+                                            <th>PRIVELEGES</th>
+                                            <th>ACTIVATIONS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody >
+                                        <tr>
+                                            <td>@mdo</td>
+                                            <td>20</td>
+                                            <td>                                                
+                                                    <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                    </label>
+                                             
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>@fat</td>
+                                            <td>20</td>
+                                            <td>
+                                                    <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                    </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>@twitter</td>
+                                            <td>20</td>
+                                            <td>
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                            </label>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td>@steve</td>
+                                            <td>20</td>
+                                            <td>
+                                                    <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                    </label>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End row -->
+
+{% endblock %}

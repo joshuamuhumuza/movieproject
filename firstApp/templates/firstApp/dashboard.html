@@ -1,0 +1,125 @@
+{% extends "index.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}
+
+        <!-- Row start -->
+        <div class="row">
+                <div class="col-md-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Book Sales</h3>
+                            </div>
+                            <div class="panel-body">
+                            
+                                    <div class="row">
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="widget-panel widget-style-2 bg-pink">
+                                                    
+                                                    <h2 class="m-0 counter">50</h2>
+                                                    <div>Books sold</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="widget-panel widget-style-2 bg-purple">
+                                                     
+                                                    <h2 class="m-0 counter">12056</h2>
+                                                    <div>Audios sold</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="widget-panel widget-style-2 bg-info">
+                                                   
+                                                    <h2 class="m-0 counter">1268</h2>
+                                                    <div>Books published</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="widget-panel widget-style-2 bg-success">
+                                                    
+                                                    <h2 class="m-0 counter">145</h2>
+                                                    <div>Audios published</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="portlet"><!-- /primary heading -->
+                            <div class="portlet-heading">
+                                <h3 class="portlet-title text-dark text-uppercase">
+                                    Transactions
+                                </h3>
+                                <div class="portlet-widgets">
+                                    <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                    <span class="divider"></span>
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#portlet5"><i class="ion-minus-round"></i></a>
+                                    <span class="divider"></span>
+                                    <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div id="portlet5" class="panel-collapse collapse in">
+                                <div class="portlet-body">
+                                    <div id="combine-chart">
+                                        <div id="combine-chart-container" class="flot-chart" style="height: 180px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /Portlet -->
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Latest Activities</h3>
+                        </div>
+                        <div class="panel-body">
+                                <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <table class="table table-hover">
+                                                
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td >Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Steve</td>
+                                                        <td>Urkel</td>
+                                                        <td>@steve</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Steve</td>
+                                                        <td>Urkel</td>
+                                                        <td>@steve</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Steve</td>
+                                                        <td>Urkel</td>
+                                                        <td>@steve</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Steve</td>
+                                                        <td>Urkel</td>
+                                                        <td>@steve</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>    
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+{% endblock %}
