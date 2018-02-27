@@ -4,11 +4,10 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from coderthemes.com/velonic_3.0/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jan 2018 06:30:22 GMT -->
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="description" >
         <meta name="author" content="Coderthemes">
 
         <link rel="shortcut icon" href="{% static 'img/favicon_1.ico' %}">
@@ -32,6 +31,9 @@
 
         <!--Data table css-->
         <link href="{% static 'assets/datatables/jquery.dataTables.min.css' %}" rel="stylesheet" type="text/css" />
+        
+        <!-- Plugins css -->
+        <link href="{% static 'assets/modal-effect/css/component.css' %}" rel="stylesheet">
         
 
         <!--Morris Chart CSS -->
@@ -71,7 +73,7 @@
                     <li class="has-submenu active"><a href="/firstApp/dashboard"><i class="ion-home"></i> <span class="nav-label">Dashboard</span></a>
                         
                     </li>
-                    <li class="has-submenu"><a href="/firstApp/upload"><i class="ion-cloud"></i> <span class="nav-label">Uploads</span></a>
+                    <li class="has-submenu"><a href="/firstApp/upload_book"><i class="ion-cloud"></i> <span class="nav-label">Uploads</span></a>
                         
                     </li>
                     <li class="has-submenu"><a href="/firstApp/books"><i class="ion-settings"></i> <span class="nav-label">Books</span></a>
@@ -187,6 +189,9 @@
         <script src="{% static 'assets/flot-chart/jquery.flot.stack.js' %}"></script>
         <script src="{% static 'assets/flot-chart/jquery.flot.crosshair.js' %}"></script>
         <script src="{% static 'assets/flot-chart/jquery.flot.init.js' %}"></script>
+
+        <script src="{% static 'assets/modal-effect/js/classie.js' %}"></script>
+        <script src="{% static 'assets/modal-effect/js/modalEffects.js' %}"></script>
 
         <script type="text/javascript">
             $(document).ready(function() {

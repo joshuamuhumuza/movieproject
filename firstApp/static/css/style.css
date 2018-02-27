@@ -1,33 +1,5 @@
 
-/* TABLE OF CONTENTS
-    1) General
-        1.1 Loader
-    2) Left Panel
-        2.1 Logo
-        2.2 Navigation
-        2.3 Sub-menu
-    3) Top Header
-    4) Content Area
-    5) Footer
-    6) Panel-Tab-Accordions
-    7) Portlets
-    8) Widgets
-    9) Chat / Todo
-   10) Calendar
-   11) Forms
-       11.1 Form wizard
-   12) Datatable
-   13) Chart
-   14) Mail
-   15) Maps
-   16) Profile
-   17) Timeline
-   18) Pages (Log-in,Register Etc....)
 
-   ======= Version 1.1 ======
-   19) Flot-chart / Rickshaw
-
-*/
 
 
 /******** 1. General ********/
@@ -2006,11 +1978,11 @@ ul.p-social-link li a {
 }
 
 input:checked + .slider {
-  background-color: #0AC729;
+  background-color: #33b86c;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #0AC729;
+  box-shadow: 0 0 1px #33b86c;
 }
 
 input:checked + .slider:before {

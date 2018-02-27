@@ -1,9 +1,4 @@
 
-/**
-* Theme: Velonic Admin Template
-* Author: Coderthemes
-* Form Validator
-*/
 
 !function($) {
     "use strict";

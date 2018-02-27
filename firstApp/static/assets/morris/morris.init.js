@@ -1,9 +1,4 @@
 
-/**
-* Theme: Velonic Admin Template
-* Author: Coderthemes
-* Morris Chart
-*/
 
 !function($) {
     "use strict";

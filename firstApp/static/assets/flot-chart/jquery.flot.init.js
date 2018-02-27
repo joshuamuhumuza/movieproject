@@ -1,8 +1,4 @@
-/**
-* Theme: Velonic Admin Template
-* Author: Coderthemes
-* Module/App: Flot-Chart
-*/
+
 
 
 !function($) {
