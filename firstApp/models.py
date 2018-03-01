@@ -1,4 +1,7 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 # Create your models here.
 class Book(models.Model):
@@ -25,11 +28,34 @@ class Transaction(models.Model):
     time = models.TimeField(auto_now_add=True)
     purchase_date = models.DateField(auto_now_add=True)
 
-class User(models.Model):
+'''class User(models.Model):
     username = models.CharField(max_length=50)
     PREVILAGES = (
         ('SU', 'Super Admin'),
         ('ED', 'Editor'),
     )
     previlages = models.CharField(choices = PREVILAGES, max_length=10)
-    activation = models.BooleanField()
+    activation = models.BooleanField()'''
+
+class Document(models.Model):
+    description = models.CharField(max_length=255, blank=True)
+    document = models.FileField(upload_to='documents/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    PREVILAGES = (
+        ('SU', 'Super Admin'),
+        ('admin', 'Admin'),
+    )
+    previlages = models.CharField(choices = PREVILAGES, max_length=20, default='admin')
+   
+
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    instance.profile.save()
