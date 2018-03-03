@@ -51,48 +51,31 @@
                                     <thead>
                                         <tr>
                                             <th>Title</th>
-                                            <th>Buyer</th>
+                                            <th>Author</th>
                                             <th>Type</th>
-                                            <th>Transaction ID</th>
+                                            <th>Genre</th>
                                             <th>ISBN-NO</th>
-                                            <th>Time</th>
-                                            <th>Purchase Date</th>
+                                            <th>Sales</th>
+                                            <th>Publish Date</th>
                                             <th>Price</th>
                                         </tr>
                                     </thead>
 
                              
                                     <tbody>
+                                        {% for book in books %}
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
+                                            <td>{{book.title}}</td>
+                                            <td>{{book.author}}</td>
+                                            <td>{{book.type}}</td>
+                                            <td>{{book.genre}}</td>
+                                            <td>{{book.isbn_number}}</td>
+                                            <td>{{book.sales}}</td>
+                                            <td>{{book.publish_date}}</td>
+                                            <td>{{book.price}}</td>
                                         </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
-                                            <td>San Francisco</td>
-                                            <td>66</td>
-                                            <td>2009/01/12</td>
-                                            <td>$86,000</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                        </tr>
+                                        {% endfor %}
+                                        
                           
                                     </tbody>
                                 </table>

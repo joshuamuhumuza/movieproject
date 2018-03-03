@@ -18,8 +18,9 @@ class Book(models.Model):
     publish_date = models.DateField(blank=True, null=True)
     description = models.TextField(default="")
     price = models.IntegerField(default=0)
-    book_pic = models.ImageField(upload_to = 'HozyBookApp/static/pic_folder/', default = 'pic_folder/None/no-img.jpg')        
-    audio_file =  models.FileField(upload_to = 'firstApp/audioFiles', default = "", null = True, blank = True)
+    document = models.FileField(upload_to='books/')
+    book_pic = models.ImageField(upload_to = 'bookimages/', default = 'pic_folder/None/no-img.jpg')        
+    audio_file =  models.FileField(upload_to = 'audiofiles/', default = "", null = True, blank = True)
     
 class Transaction(models.Model):
     Book = models.ForeignKey(Book, on_delete=models.CASCADE)
@@ -42,7 +43,8 @@ class Document(models.Model):
     document = models.FileField(upload_to='documents/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
-class Profile(models.Model):
+'''class Profile(models.Model):
+    profile_id = models.PositiveIntegerField(primary_key=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     PREVILAGES = (
         ('SU', 'Super Admin'),
@@ -58,4 +60,4 @@ def create_user_profile(sender, instance, created, **kwargs):
 
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):
-    instance.profile.save()
+    instance.profile.save()'''

@@ -13,12 +13,13 @@ class SignUpForm(UserCreationForm):
         fields = ('username', 'email', 'password1', 'password2', )
 
 
-class DocumentForm(forms.ModelForm):
+class BookForm(forms.ModelForm):
     class Meta:
-        model = Document
-        fields = ('description', 'document', )
+        model = Book
+        fields = ('title', 'author', 'type', 'genre', 'isbn_number', 'publish_date', 'description', 'price', 'book_pic','document', 'audio_file',
+    )
 
-class ProfileForm(forms.ModelForm):
+'''class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ('previlages',)
+        fields = ('previlages',)'''
